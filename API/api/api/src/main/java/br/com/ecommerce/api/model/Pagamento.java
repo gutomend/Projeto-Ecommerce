@@ -16,7 +16,7 @@ public class Pagamento {
     @Column(name = "pagamento_id", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
 
