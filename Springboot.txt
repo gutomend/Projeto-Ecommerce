@@ -1,0 +1,61 @@
+API INTERMEDIAR CONEXÃO ENTRE FRONT END E BANCO DE DADOS
+
+REST RETORNA DADOS DE SAIDA A UM CLIENTE
+
+JPA TRADUZ SQL PARA JAVA E VICE VERSA
+
+HIBERNATE FUNCIONA EM CONJUNTO COM JPA
+
+EM CONJUNTO SAO UMA ORM (EXISTEM DIVERSAS OUTRAS)
+
+JPA FIRST - CODIGO FEITO PRIMEIRO
+DATABASE FIRST - DB FEITO PRIMEIRO
+
+SPRING - PACOTAO DE COISAS PRONTAS (ORDENADOR DE FUNCOES)
+SPRING BOOT - EVOLUÇÃO DO SPRING (MAIS SIMPLIFICADO)
+
+----------------------------------------------------------
+Estruturas de pastas
+
+1 Passo - Model = Tabelas (Entidades)
+2 Passo - Repository = Classes (Que interagem com o BD)
+ 2.1 Anotacoes
+ 2.2 Herdar de JpaRepository
+3 Passo - Service = Logica de Negocio (Controles de proibir/permitir)
+ 3.1 Anotações(Service)
+ 3.2 Injecao
+4 Passo - Controller = Porta de entrada da API
+ 4.1 Anotações (RestContoller e RequestMapping)
+ 4.2 Injeção de dependencia
+Arquitetura (Como os sistemas são organizados)
+
+------------------------------------------------------
+CRUD - 4 principais operações
+C - Criar
+R - Ler
+U - Atualizar
+D - Apagar
+-----------------------------------------------------
+
+Vetores - Tem limite
+Lista - não tem limite fixo
+
+
+-----------------------------------------------------
+
+Atualizar Repositorio
+git init
+
+git add .
+git commit -m "comentario"
+git push origin main
+
+-------------------------------------------------------
+
+http://localhost:8080/swagger-ui/index.html#
+
+-------------------------------------------------------
+
+POSSO RECEBER INFORMACOES
+-> PELO CORPO 
+-> PELO LINK

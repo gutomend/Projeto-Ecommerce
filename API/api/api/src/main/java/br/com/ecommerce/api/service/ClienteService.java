@@ -41,5 +41,23 @@ public class ClienteService {
     //3. Se existir, excluo
     clienteRepository.delete(cliente);
     return cliente;
-}
+    }
+
+    public Cliente atualizarCliente(Integer id, Cliente clienteNovo){
+        //1.Procurar quem eu quero atualizar
+        Cliente clienteAntigo = buscarPorId(id);
+
+        //2.Se eu não achar, retorno nulo
+        if (clienteAntigo != null){
+            return null;
+        }
+
+        //3.Se eu achar eu atualizo
+        clienteAntigo.setSenha(clienteNovo.getSenha());
+        clienteAntigo.setNomeCompleto(clienteNovo.getNomeCompleto());
+        clienteAntigo.setEmail(clienteNovo.getEmail());
+        clienteAntigo.setTelefone(clienteNovo.getTelefone());
+        return clienteRepository.save(clienteAntigo);
+
+    }
 }

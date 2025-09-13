@@ -1,0 +1,52 @@
+Passo a passo CRUD:
+-------------------------------------------------------------------
+
+Estrutura de Pastas(Intellij):
+
+src -> main -> java -> br.com.ecommerce.api -> controller; model; 							repository; service;
+
+--------------------------------------------------------------------
+
+1. Criar Model -> Tabelas (Neste local estão as Entidades da aplicação (Tabelas do Banco))
+- No caso, importamos através do que havia sido criado no Banco de Dados via PostgreSQL.
+
+------------------------------------------------------------------
+2. Criar Repository -> Classes (Neste local estão as Classes que interagem com o BD):
+- Definir instrução de Repository:
+@Repository
+ - Herdar(extends) de JpaRepository (JPA traduz SQL para JAVA) campos da Tabela do Banco de Dados (Entidade e tipo ex: Int)
+
+-------------------------------------------------------------------
+3. Criar Service -> Logica de Negocio (Controles de proibir/permitir)
+ 3.1 Anotações(Service)
+ 3.2 Injeção
+
+
+4. Criar Controller -> É a porta de entrada da API (Neste local estão nossos Controladores, responsáveis por receber os pedidos, chamar os repositórios e devolver uma resposta ao Cliente )
+- Definir instruções:
+@RestContoller e @RequestMapping
+ 4.2 Injeção de dependência
+
+----------------------------------------------------------------
+
+Base  Curso (Foco Aprendizado)
+Desenvolvedor Backend -> APIs
+Banco de Dados
+CRUD Operações
+Métodos Personalizados
+Segurança e Autenticação (Login)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+1. Criar Projeto
+ 1.1. Acessar o Spring Initializr
+
+2. Configuração do Projeto
+ 2.1 Informar dados do BD
+
+3. Criar Models (Podem ser importadas do DB ou Escritas na mão)
+ 3.1 Criar as anotacoes
+
+
+---------------------------------------------------------------------
+Spring Initializr(via Google) - Gera códigos pre prontos de springboot
+	Project -> Maven (Gerencia opcionais)
+	Language -> Java
+	SpringBoot -> 3.5.5
+
+	Project Metadada:
+	Group -> Exemplo:"br.com.senai"
+	Packaging -> JAR
+	Java ->24
+
+	Add Dependencies:
+	Lombok (Biblioteca/Atalho de códigos)
+	SpringWeb (Roda o site)
+	JPA (Traduz o código para SQL)
+	POSTGRESQL DRIVER (Qual banco)
+
+	GENERATE
+----------------------------------------------------------------------
+Após baixado, abrir no Intelij
+----------------------------------------------------------------------
+Expandir as pastas em "src" (main e resources)
+
+Em "aplication.properties" inserir configurações iniciais
+
+
+
+
