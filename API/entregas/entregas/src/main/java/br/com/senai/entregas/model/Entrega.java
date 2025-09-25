@@ -1,6 +1,5 @@
 package br.com.senai.entregas.model;
 
-import br.com.senai.entregas.model.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,7 +13,7 @@ import java.time.OffsetDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "entregas")
+@Table(name = "entrega")
 
 
 public class Entrega {
